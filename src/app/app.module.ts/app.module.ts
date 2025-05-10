@@ -4,20 +4,17 @@ import { MaterialModule } from './app-material.module';
 import { AppComponent } from '../app.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
-
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     CommonModule,
     MaterialModule,
     BrowserModule,
-    RouterModule
-    
+    RouterModule,
+    SharedModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
